@@ -2,6 +2,12 @@
 
 ## Reporting a Vulnerability
 
+> [!NOTE]
+>
+> Make sure to send your report to a code repository such as <https://github.com/containerd/containerd>.
+>
+> Do not send any report to <https://github.com/containerd/project>.
+
 To report a containerd vulnerability:
 
 * Navigate to the security tab on the repository
