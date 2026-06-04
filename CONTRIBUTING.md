@@ -150,3 +150,17 @@ Use your real name (sorry, no pseudonyms or anonymous contributions.)
 
 If you set your `user.name` and `user.email` git configs, you can sign your
 commit automatically with `git commit -s`.
+
+AI tools, services, or assistants may be used to assist with contributions, but
+do not add them to `Signed-off-by` or `Co-authored-by` lines. These commit
+trailers must identify the human contributors certifying or authoring the
+contribution, or project-approved automation accounts used to submit automated
+contributions.
+
+Contributors are encouraged, but not required, to add an `Assisted-by` trailer
+when AI assistance helped write or change the contribution. The trailer may
+identify the AI coding assistant and, optionally, the model/version used. This is
+not needed for simple typing aids, formatting, or general-purpose development
+tools such as editors, compilers, or build tools. The contributor, not the AI
+assistant, remains responsible for understanding and testing the change before
+signing it off.
