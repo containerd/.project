@@ -27,7 +27,7 @@ reach out to any committer directly to confirm receipt of the issue.
 
 Once a committer has confirmed the relevance of the report, a draft security
 advisory will be created on Github. The draft advisory will be used to discuss
-the issue with committers, the reporter(s), and containerd's security advisors.
+the issue with people including committers, the reporter(s), and containerd's security advisors.
 If the reporter(s) wishes to participate in this discussion, then provide
 reporter Github username(s) to be invited to the discussion. If the reporter(s)
 does not wish to participate directly in the discussion, then the reporter(s)
@@ -41,6 +41,14 @@ announcing the scope of the vulnerability, the date of availability of the
 patch release, and the date of public disclosure. The reporter(s) are expected
 to participate in the discussion of the timeline and abide by agreed upon dates
 for public disclosure.
+
+Prior to the public disclosure, the vulnerability may be shared with:
+- Owners of the `@containerd` organization, including CNCF staff
+- Committers
+- Security Advisors
+- Reporter(s)
+- Reporter(s) of identical or very similar vulnerabilities
+- Additional contributors or experts who can provide context, at the discretion of the Committers
 
 ## Supported Versions
 
