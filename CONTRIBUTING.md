@@ -44,6 +44,31 @@ the feature was conceived and can inform future documentation contributions.
 Make sure that new tests are added for bugs in order to catch regressions and tests
 with new features to exercise the new functionality that is added.
 
+## Maintainer Takeover of Stale Pull Requests
+
+The containerd project values the effort that contributors put into pull
+requests. However, life priorities change, and sometimes a contributor may
+become unresponsive before a pull request is fully ready to be merged.
+
+If a pull request is nearly complete but requires some final adjustments (such
+as addressing minor review nits or resolving merge conflicts), and the original
+author is not responding to comments, a maintainer may choose to take over the
+pull request to ensure the work is not lost and can be merged.
+
+In such cases, we follow a practice inspired by the
+[Linux kernel contribution guidelines](https://docs.kernel.org/maintainer/modifying-patches.html):
+
+- **Authorship Preservation**: The maintainer will preserve the original
+  author's identity in the commit history (e.g., keeping them as the commit
+  author or using `Co-authored-by`).
+- **Modifications**: The method of applying modifications (e.g., amending
+  existing commits for minor fixes vs. adding follow-up commits for larger
+  changes) is left to the maintainer's preference on a case-by-case basis.
+- **Audit Trail**: Maintainers should provide a link back to the original pull
+  request in the final commit message to maintain traceability. The original
+  pull request will then be closed with a reference to the new pull request or
+  commit.
+
 ## Commit Messages
 
 There are times for one line commit messages and this is not one of them.
