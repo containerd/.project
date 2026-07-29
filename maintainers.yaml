@@ -9,7 +9,6 @@ maintainers:
     teams:
       - name: "project-maintainers"
         members:
-          - crosbymichael
           - dmcgowan
           - estesp
           - AkihiroSuda
@@ -17,7 +16,6 @@ maintainers:
           - mxpv
           - fuweid
           - dims
-          - kevpar
           - kzys
           - samuelkarp
           - kiashok

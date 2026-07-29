@@ -9,7 +9,6 @@ slug: "containerd"
 name: "containerd"
 description: "An open and reliable container runtime"
 type: "project"
-project_lead: "crosbymichael" # TODO: AUTO-DETECTED — please verify
 slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
   - name: "#containerd"
     link: "https://slack.cncf.io/"
