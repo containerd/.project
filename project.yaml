@@ -1,32 +1,71 @@
 # .project metadata for containerd
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set identity_type under legal (has_dco, has_cla)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "containerd"
 name: "containerd"
 description: "An open and reliable container runtime"
 type: "project"
-project_lead: "crosbymichael" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+slack_channels:
   - name: "#containerd"
+    workspace: "cncf"
     link: "https://slack.cncf.io/"
     primary: true
-  - name: "#gh-light-mode-only"
-  - name: "#gh-dark-mode-only"
-  - name: "#community"
+  - name: "#containerd-dev"
+    workspace: "cncf"
   - name: "#runwasi"
-  - name: "#sig-node"
+    workspace: "cncf"
 
 maturity_log:
-  - phase: "graduated"
+  - phase: "incubating"
     date: "2017-03-29T00:00:00Z"
-    issue: "https://github.com/cncf/toc/pull/1017" # TODO: AUTO-DETECTED — please verify
+    issue: "https://www.cncf.io/announcements/2017/03/29/cloud-native-computing-foundation-accepts-containerd-into-3rd-party-project-incubator/"
+  - phase: "graduated"
+    date: "2019-02-28T00:00:00Z"
+    issue: "https://www.cncf.io/announcement/2019/02/28/cncf-announces-containerd-graduation/"
 
 repositories:
   - "https://github.com/containerd/containerd"
+
+  # Core subprojects (direct dependencies of containerd)
+  - "https://github.com/containerd/btrfs"
+  - "https://github.com/containerd/cgroups"
+  - "https://github.com/containerd/console"
+  - "https://github.com/containerd/continuity"
+  - "https://github.com/containerd/errdefs"
+  - "https://github.com/containerd/fifo"
+  - "https://github.com/containerd/go-cni"
+  - "https://github.com/containerd/go-runc"
+  - "https://github.com/containerd/log"
+  - "https://github.com/containerd/nri"
+  - "https://github.com/containerd/otelttrpc"
+  - "https://github.com/containerd/platforms"
+  - "https://github.com/containerd/plugin"
+  - "https://github.com/containerd/ttrpc"
+  - "https://github.com/containerd/typeurl"
+  - "https://github.com/containerd/zfs"
+
+  # Core subprojects (other & tooling)
+  - "https://github.com/containerd/aufs"
+  - "https://github.com/containerd/ltag"
+  - "https://github.com/containerd/protobuild"
+  - "https://github.com/containerd/release-tool"
+
+  # Non-core subprojects
+  - "https://github.com/containerd/accelerated-container-image"
+  - "https://github.com/containerd/fuse-overlayfs-snapshotter"
+  - "https://github.com/containerd/go-dmverity"
+  - "https://github.com/containerd/imgcrypt"
+  - "https://github.com/containerd/nerdbox"
+  - "https://github.com/containerd/nerdctl"
+  - "https://github.com/containerd/nydus-snapshotter"
+  - "https://github.com/containerd/overlaybd"
+  - "https://github.com/containerd/runwasi"
+  - "https://github.com/containerd/rust-extensions"
+  - "https://github.com/containerd/shimtest"
+  - "https://github.com/containerd/stargz-snapshotter"
+  - "https://github.com/containerd/ttrpc-rust"
 
 website: "https://containerd.io/"
 
@@ -35,12 +74,18 @@ artwork: "https://landscape.cncf.io/logos/containerd.svg"
 adopters:
   path: "https://github.com/containerd/containerd/blob/main/ADOPTERS.md"
 
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "containerd/containerd"
+audits:
+  - date: "2019-02-14T00:00:00Z"
+    type: "security"
+    url: "https://github.com/containerd/containerd.io/blob/main/static/img/SECURITY_AUDIT.pdf"
+  - date: "2023-03-02T00:00:00Z"
+    type: "fuzzing"
+    url: "https://github.com/containerd/containerd.io/blob/main/static/img/ADA-fuzzing-audit-21-22.pdf"
 
 social:
+  bsky: "https://bsky.app/profile/containerd.dev"
+  mastodon: "https://hachyderm.io/@containerd"
+  youtube: "https://www.youtube.com/@CNCFcontainerd"
   twitter: "https://twitter.com/containerd"
 
 security:
@@ -50,6 +95,8 @@ security:
     advisory_url: "https://github.com/containerd/containerd/security/advisories/new"
 
 governance:
+  governance_doc:
+    path: "https://github.com/containerd/.project/blob/main/GOVERNANCE.md"
   contributing:
     path: "https://github.com/containerd/containerd/blob/main/CONTRIBUTING.md"
   code_of_conduct:
