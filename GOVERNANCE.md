@@ -129,7 +129,7 @@ Both core and non-core subprojects must adhere to the CNCF
 
 New core subprojects can request to be added to the containerd GitHub
 organization by submitting a project proposal via public forum (a
-`containerd/project` GitHub issue is the easiest way to provide this proposal).
+`containerd/.project` GitHub issue is the easiest way to provide this proposal).
 The existing maintainers are given seven days to discuss the new project, raise
 objections and cast their vote. Projects must be approved by 2/3 of the current
 core committers.

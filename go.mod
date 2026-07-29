@@ -1,4 +1,4 @@
-module github.com/containerd/project
+module github.com/containerd/.project
 
 go 1.23.1
 

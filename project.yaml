@@ -96,7 +96,7 @@ security:
 
 governance:
   governance_doc:
-    path: "https://github.com/containerd/project/blob/main/GOVERNANCE.md"
+    path: "https://github.com/containerd/.project/blob/main/GOVERNANCE.md"
   contributing:
     path: "https://github.com/containerd/containerd/blob/main/CONTRIBUTING.md"
   code_of_conduct:

@@ -36,15 +36,15 @@ the following markdown:
 
 {Some-project} is a containerd sub-project, licensed under the [Apache 2.0 license](./LICENSE).
 As a containerd sub-project, you will find the:
- * [Project governance](https://github.com/containerd/project/blob/main/GOVERNANCE.md),
- * [Maintainers](https://github.com/containerd/project/blob/main/MAINTAINERS),
- * and [Contributing guidelines](https://github.com/containerd/project/blob/main/CONTRIBUTING.md)
+ * [Project governance](https://github.com/containerd/.project/blob/main/GOVERNANCE.md),
+ * [Maintainers](https://github.com/containerd/.project/blob/main/MAINTAINERS),
+ * and [Contributing guidelines](https://github.com/containerd/.project/blob/main/CONTRIBUTING.md)
 
-information in our [`containerd/project`](https://github.com/containerd/project) repository.
+information in our [`containerd/.project`](https://github.com/containerd/.project) repository.
 ```
 
 If the project has its own `MAINTAINERS` file, that file should contain a comment with a link to
-the core `MAINTAINERS` file in `containerd/project` and mention it as additional maintainers.
+the core `MAINTAINERS` file in `containerd/.project` and mention it as additional maintainers.
 
 ### Non-core project documents
 
@@ -55,7 +55,7 @@ make the following changes to your project once approved and added:
  a **non-core** subproject of containerd_"
  * Add the project details boilerplate provided above with the following two changes:
    1. The first line should be modified to state: _{Some-project} is a **non-core** containerd subproject_
-   2. Do not link to the core `MAINTAINERS` file in `containerd/project`. That link should be modified to point to your existing non-core project `MAINTAINERS` file.
+   2. Do not link to the core `MAINTAINERS` file in `containerd/.project`. That link should be modified to point to your existing non-core project `MAINTAINERS` file.
 
 ## Scripts and utilities
 

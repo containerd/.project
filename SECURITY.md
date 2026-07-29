@@ -6,7 +6,7 @@
 >
 > Make sure to send your report to a code repository such as <https://github.com/containerd/containerd>.
 >
-> Do not send any report to <https://github.com/containerd/project>.
+> Do not send any report to <https://github.com/containerd/.project>.
 
 To report a containerd vulnerability:
 
