@@ -69,7 +69,7 @@ repositories:
 
 website: "https://containerd.io/"
 
-artwork: "https://landscape.cncf.io/logos/containerd.svg"
+artwork: "https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/containerd/stacked/black/containerd-stacked-black.png"
 
 adopters:
   path: "https://github.com/containerd/containerd/blob/main/ADOPTERS.md"
