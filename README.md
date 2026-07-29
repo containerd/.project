@@ -2,7 +2,9 @@
 
 This `project` repository contains the canonical metadata, governance definitions, and specified project roles (such as maintainers and security advisors) for [containerd](https://containerd.io/).
 
-It also implements the CNCF `.project` (dot-project) initiative to centralize and automate metadata management for all CNCF projects.
+It also implements the
+[CNCF `.project` (dot-project) initiative](https://github.com/cncf/automation/tree/main/utilities/dot-project)
+to centralize and automate metadata management for all CNCF projects.
 
 ## What's in this repo
 
