@@ -1,0 +1,25 @@
+name: Update Landscape
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'project.yaml'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
+        with:
+          fetch-depth: 0
+
+      - name: Update Landscape
+        uses: cncf/automation/.github/actions/landscape-update@95d25b12337a14e4a74f690c856f6903584e839e
+        with:
+          project_file: 'project.yaml'
+          token: ${{ secrets.LANDSCAPE_REPO_TOKEN }}

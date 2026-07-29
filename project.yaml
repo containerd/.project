@@ -1,0 +1,74 @@
+# .project metadata for containerd
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Set identity_type under legal (has_dco, has_cla)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "containerd"
+name: "containerd"
+description: "An open and reliable container runtime"
+type: "project"
+project_lead: "crosbymichael" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#containerd"
+    link: "https://slack.cncf.io/"
+    primary: true
+  - name: "#gh-light-mode-only"
+  - name: "#gh-dark-mode-only"
+  - name: "#community"
+  - name: "#runwasi"
+  - name: "#sig-node"
+
+maturity_log:
+  - phase: "graduated"
+    date: "2017-03-29T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/1017" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/containerd/containerd"
+
+website: "https://containerd.io/"
+
+artwork: "https://landscape.cncf.io/logos/containerd.svg"
+
+adopters:
+  path: "https://github.com/containerd/containerd/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "containerd/containerd"
+
+social:
+  twitter: "https://twitter.com/containerd"
+
+security:
+  policy:
+    path: "https://github.com/containerd/.github/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/containerd/containerd/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/containerd/containerd/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/containerd/containerd/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/containerd/containerd/blob/main/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/containerd/containerd/blob/main/README.md"
+
+landscape:
+  category: "Runtime"
+  subcategory: "Container Runtime"
+
