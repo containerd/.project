@@ -3,6 +3,9 @@
 # See GOVERNANCE.md for committer versus reviewer roles
 #
 # COMMITTERS
+#
+# Recognized as "Maintainers" in the CNCF terminology.
+#
 # GitHub ID, Name, Email address,GPG fingerprint
 "AkihiroSuda","Akihiro Suda","akihiro.suda.cz@hco.ntt.co.jp","C020 EA87 6CE4 E06C 7AB9 5AEF 4952 4C6F 9F63 8F1A"
 "dmcgowan","Derek McGowan","derek@mcgstyle.net","8C7A 111C 2110 5794 B0E8 A27B F58C 5D0A 4405 ACDB"
@@ -16,6 +19,9 @@
 "kiashok","Kirtana Ashok","kirtana.ashok@gmail.com",""
 #
 # REVIEWERS
+#
+# Not recognized as "Maintainers" in the CNCF terminology.
+#
 # GitHub ID, Name, Email address, GPG fingerprint
 "jterry75","Justin Terry","jlterry@amazon.com",""
 "cpuguy83","Brian Goff","cpuguy83@gmail.com",""
