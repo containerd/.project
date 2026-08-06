@@ -7,6 +7,11 @@ see our [CONTRIBUTING.md](./CONTRIBUTING.md) guide.
 
 ## Maintainership
 
+> [!NOTE]
+>
+> "Maintainers" in our terminology has a broader scope than what CNCF recognizes as "Maintainers".
+> Only the "Committers" of the core containerd repository are recognized as "Maintainers" in the CNCF terminology.
+
 There are different types of maintainers, with different responsibilities, but
 all maintainers have 3 things in common:
 

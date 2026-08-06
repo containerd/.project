@@ -7,8 +7,13 @@ maintainers:
   - project_id: "containerd"
     org: "containerd"
     teams:
+      # "project-maintainers" is the name validated by CNCF Automation (https://github.com/cncf/automation).
+      # This team does not exist as a team on GitHub (https://github.com/orgs/containerd/teams).
+      # Note that the GitHub team @containerd/maintainers refers to nearly all the members of the GitHub organization,
+      # including Reviewers, Sub-project Committers, and Sub-project Reviewers.
+      # They are NOT recognized as "Maintainers" in the CNCF terminology.
       - name: "project-maintainers"
-        members:
+        members: &project_maintainers_members
           - dmcgowan
           - estesp
           - AkihiroSuda
@@ -19,3 +24,29 @@ maintainers:
           - kzys
           - samuelkarp
           - kiashok
+      # "Committers" defined in the containerd terminology (see GOVERNANCE.md) are recognized as "Maintainers" in the CNCF terminology.
+      # GitHub team: @containerd/committers
+      - name: "committers"
+        members: *project_maintainers_members
+      # "Reviewers" defined in the containerd terminology are NOT recognized as "Maintainers" in the CNCF terminology.
+      # GitHub team: @containerd/reviewers
+      - name: "reviewers"
+        members:
+          - jterry75
+          - cpuguy83
+          - thajeztah
+          - ktock
+          - dcantah
+          - MikeZappa87
+          - klihub
+          - Iceber
+          - laurazard
+          - henry118
+          - ruiwen-zhao
+          - akhilerm
+          - corhere
+          - austinvazquez
+          - djdongjin
+          - chrishenzie
+          - hsiangkao
+          - vvoland
