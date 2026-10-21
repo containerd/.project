@@ -71,3 +71,13 @@ and extensibility - principles that continue to define the project today. Michae
 fingerprints are all over the container ecosystem from the early days of Docker to
 libcontainer into runc. We are incredibly proud to have worked alongside him and for the
 huge amount of heart and soul he poured into the project to make it the success it is today.
+
+## Kirtana Ashok [@kiashok](https://github.com/kiashok)
+
+Kirtana was a driving force behind Windows support in containerd, keeping the
+hcsshim integration current across the main and release branches and delivering
+features such as *ArgsEscaped image support for CRI*, *stable ABI-aware Windows
+platform/OSVersion matching*, *HostProcess container port forwarding*, and
+*Windows CPU affinity*. She improved the reliability of the Windows CI across
+Windows Server 2022 and 2025, backported many fixes to supported releases, and
+served as a release manager for a number of 1.6, 1.7, and 2.1 patch releases.

@@ -23,7 +23,6 @@ maintainers:
           - dims
           - kzys
           - samuelkarp
-          - kiashok
       # "Committers" defined in the containerd terminology (see GOVERNANCE.md) are recognized as "Maintainers" in the CNCF terminology.
       # GitHub team: @containerd/committers
       - name: "committers"
