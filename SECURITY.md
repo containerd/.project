@@ -58,7 +58,9 @@ Prior to the public disclosure, the vulnerability may be shared with:
 - Security Advisors
 - Reporter(s)
 - Reporter(s) of identical or very similar vulnerabilities
-- Additional contributors or experts who can provide context, at the discretion of the Committers
+- Additional contributors or experts who can provide context, at the discretion
+  of the Committers
+- Members of the containerd disclosure distribution list
 
 ## Supported Versions
 
@@ -68,7 +70,14 @@ release branch may receive security updates. For any security issues discovered
 on older versions, non-core packages, or dependencies, please inform committers
 using the same security mailing list as for reporting vulnerabilities.
 
-## Joining the security announce mailing list
+## Coordinated disclosure
+
+The containerd project operates a coordinated disclosure distribution list with
+the goal of enabling downstream distributors of containerd to produce patched
+builds and guidance for their end users with minimal delay after the containerd
+maintainers disclose vulnerabilities publicly.
+
+### Joining the security announce mailing list
 
 Any organization or individual who directly uses containerd and non-core
 packages in production or in a security critical application is eligible to join
@@ -79,3 +88,58 @@ containerd committer or security advisor as well as have a record of properly
 handling non-public security information.
 Sponsorship should not be requested via public channels since membership of the
 security announce list is not public.
+
+### Embargo policy
+
+The information members receive from the distribution list must not be made
+public, shared, nor even hinted at anywhere beyond the need-to-know within your
+specific team except with the list's explicit approval. This holds true until
+the public disclosure date/time that was agreed upon by the list. Members of the
+list and others may not use the information for anything other than getting the
+issue fixed for your respective distribution's users.
+
+Before any information from the list is shared with respective members of your
+team required to fix said issue, they must agree to the same terms and only find
+out information on a need-to-know basis.
+
+List members may ask for approval to share information and builds with each
+other ahead of public disclosure. Members who use containerd builds from another
+member OS distributor may wish to receive builds ahead of public disclosure for
+testing and qualification. Members who ask for approval should include the
+following information in their request:
+
+* the specific list of members who are included in the request
+* the specific class of vulnerabilities the members collaborate for
+* what information (e.g. vulnerability details, software artifacts) will be
+  exchanged and how it will be protected (access controls)
+* the purposes for which the information exchanged will be used
+* explicit acknowledgement by all included members that the rest of the embargo
+  policy remains in force
+
+In the unfortunate event you share the information beyond what is allowed by
+this policy, you must urgently inform the containerd maintainers of exactly what
+information leaked and to whom. Evidence of public exploits should be reported
+back to the list for coordination and discussion of a new public disclosure
+date/time; unilateral or uncoordinated publication of embargoed information is
+not permitted. A retrospective will take place after the leak so we can assess
+how to not make the same mistake in the future.
+
+If you leak information and break the policy outlined here, you may be removed
+from the list.
+
+### Member responsibilities
+
+This is a team effort. As a member of the list you are expected to review and/or
+test the proposed patches and to point out potential issues with them (such as
+incomplete fixes for the originally reported issues, additional issues you might
+notice, and newly introduced bugs). Members should inform the list of the work
+done even if no issues were encountered.
+
+### Vulnerabilities included
+
+The containerd maintainers, at their sole discretion, will decide which
+vulnerabilities are sent to the coordinated disclosure distribution list.
+Criteria for determining whether an embargo should be in force or how long the
+embargo period lasts include but are not limited to: severity, ease of
+exploitation, and evidence of public exploitation. The containerd maintainers do
+not typically use the list for low- or moderate-severity vulnerabilities.
